@@ -1,0 +1,153 @@
+body {
+    font-family: 'Roboto Slab', serif;
+    font-size: 32px;
+    line-height: 42px;
+    color: #000000;
+    background-color: #FFFFFF;
+    margin: 0;
+    /* background-color: rgb(201, 206, 206); */
+    /* background-color: grey; */
+    /* background: linear-gradient(to right, grey, white); */
+}
+
+.page-header {
+    width: 1280px;
+    padding: 20px 100px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    border-bottom: 3px solid black;
+}
+
+.main-header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: block;
+}
+
+.select_city {
+    display: block;
+    margin-left: 100px;
+    margin-top: 25px;
+    border: none;
+    font-size: 36px;
+    line-height: 47px;
+    background-color: inherit;
+}
+
+.select_city option {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 47px;
+}
+
+.main-content {
+    width: 1280px;
+    margin: 0 auto;
+    /* background: url(/image/chel.png); */
+}
+
+/* Форма авторизации */
+
+.authorization {
+    width: 750px;
+    padding: 35px 100px;
+    margin: 0 auto;
+    border: 3px solid black;
+    border-radius: 5%;
+    background-color: white;
+}
+
+.authorization-title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+    margin-top: 0;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.authorization_roles {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.student-btn, 
+.coach-btn {
+    font-size: inherit;
+    font-weight: 700;
+    line-height: inherit;
+    padding: 15px 60px;
+    border: none;
+    border-radius: 35px;
+    background-color: #D9D9D9;
+}
+
+.student-btn, 
+.coach-btn:active {
+    color: white;
+    background-color: #74C044;
+}
+
+.authorization_sign-in {
+    display: flex;
+    flex-direction: column;
+}
+
+.login,
+.password {
+    font-size: inherit;
+    line-height: inherit;
+    margin-top: 0;
+    padding: 13px 25px;
+    border-radius: 35px;
+    color: rgba(0, 0, 0, 0.4)
+}
+
+.login,
+.password:focus {
+    color: black;
+}
+
+.login {
+    margin-bottom: 30px;
+}
+
+.password {
+    margin-bottom: 10px;
+}
+
+.forgot_password {
+    font-size: inherit;
+    line-height: inherit;
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-left: auto;
+    text-decoration: none;
+    color: #74C044;
+}
+
+.sign-in_button {
+    margin-top: 0;
+    margin-bottom: 45px;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: 700;
+    background-color: #74C044;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 35px;
+}
+
+.registration {
+    margin-top: 0;
+    text-align: center;
+    color: #74C044;
+    text-decoration: none;
+}

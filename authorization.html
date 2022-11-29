@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="/authorization.css" rel="stylesheet">
+</head>
+<body>
+    <header class="page-header">
+        <nav class="main-header-nav">
+            <a href="#" class="logo-link">
+                <img src="/image/logo.svg" class="logo" width="143" height="95" alt="Логотип Coach">
+            </a>
+            <select class="select_city">
+                <option value="1">Екатеринбург</option>
+                <option value="2">Челябинск</option>
+            </select>
+        </nav>
+    </header>
+    <main class="main-content">
+        <form class="authorization">
+            <h1 class="authorization-title">Вход</h1>
+            <div class="authorization_roles">
+                <button class="student-btn" type="submit">Я ученик</button>
+                <button class="coach-btn" type="submit">Я тренер</button>
+            </div>
+            <div class="authorization_sign-in">
+                <input class="login" type="text" aria-label="Ввод телефона или логина" placeholder="Телефон или почта">
+                <input class="password" type="password" aria-label="Ввод пароля" placeholder="Пароль">
+                <a href="#" class="forgot_password">Забыли пароль?</a>
+                <button class="sign-in_button" type="submit">Войти</button>
+                <a href="#" class="registration">Зарегистрироваться</a>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
