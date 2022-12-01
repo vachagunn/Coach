@@ -232,4 +232,18 @@ h3 {
     color: #2E7800;
 }
 
+.page-footer {
+    display: flex;
+    justify-content: space-between;
+    max-width: var(--container-width);
+    padding: var(--container-padding);
+    background-color: #54604d;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    border-top: 3px solid black;
+}
+
+.contacts a p{
+    text-align: end;
+}
 
