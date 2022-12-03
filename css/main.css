@@ -17,6 +17,10 @@ body {
     color: #0F1F1C;
 }
 
+a {
+    color: inherit;
+}
+
 .page-header {
     max-width: var(--container-width);
     padding: var(--container-padding) 50px;
@@ -27,13 +31,14 @@ body {
 
 .main-header-nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 20px;
     align-items: center;
 }
 
 .logo {
-    margin-right: 200px;
-    display: block;
+    text-transform: uppercase;
 }
 
 .select_city {
@@ -42,48 +47,58 @@ body {
     font-size: inherit;
     line-height: inherit;
     font-weight: 300;
-    margin-right: auto;
     background-color: inherit;
 }
 
 .sign-in_link {
     text-decoration: none;
-    color: inherit;
     font-weight: 300;
-    margin-left: auto;
 }
 
 .main {
     margin: 0;
     padding: 0;
-    width: 1280px;
-    margin: 0 auto;
 }
 
 /* Поиск */
 
 .search-block {
+    max-width: var(--container-width);
+    margin: 0 auto;
+
     display: flex;
-    gap: 20px;
+    justify-content: space-between;
+
     margin-bottom: 70px;
 }
 
 .search-input {
-    width: 940px;
+    max-width: 1000px;
+    width: 100%;
     padding: 30px;
-    font-size: inherit;
     border: 2px solid black;
     border-radius: 20px;
 }
 
 .search-btn {
-    width: 260px;
-    padding: 30px;
-    font-size: inherit;
+    display: inline-block;
+
+    padding: 30px 70px;
+    
     border: none;
     border-radius: 20px;
     background: #74C044;
-    color: white;
+    color: #fff;
+}
+
+.search-btn:hover {
+    color: #0F1F1C;
+    transition: color 0.2s ease-in;
+}
+
+.search-btn:active {
+    position: relative;
+    top: 1px;
 }
 
 /* Категории */
@@ -97,8 +112,9 @@ h2 {
 }
 
 .categories-block {
-    margin: 0;
-    padding: 0;
+    max-width: var(--container-width);
+    margin: 0 auto;
+
     margin-bottom: 120px;
 }
 
@@ -134,6 +150,10 @@ h2 {
 
 .recommendaions-block {
     margin: 0;
+
+    max-width: var(--container-width);
+    margin: 0 auto;
+
     padding-left: 0;
     margin-bottom: 60px;
 }
@@ -221,7 +241,22 @@ h3 {
 }
 
 .information-block-buttons a {
+    position: relative;
     text-decoration: none;
+}
+
+.information-block-buttons a:hover::after {
+    content: "";
+
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 10px;
+    bottom: -6px;
+
+    height: 4px;
+    background-color: #C4C4C4;
+    border-radius: 50px;
 }
 
 .information-block-more {
@@ -233,14 +268,29 @@ h3 {
 }
 
 .page-footer {
-    display: flex;
-    justify-content: space-between;
+    background-color: #D9D9D9;
+    border-top: 3px solid black;
+}
+
+.page-footer-wrapper {
     max-width: var(--container-width);
     padding: var(--container-padding);
-    background-color: #54604d;
     margin: 0 auto;
-    margin-bottom: 60px;
-    border-top: 3px solid black;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.links-list-item {
+    margin-bottom: 14px;
+}
+
+.links-list-item:last-child {
+    margin-bottom: 0;
+}
+
+.contacts {
+    margin-top: 35px;
 }
 
 .contacts a p{
