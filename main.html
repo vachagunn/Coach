@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
+    
     <title>Coach</title>
 </head>
 <body>
@@ -16,10 +18,13 @@
                 <!-- <img src="/coach/image/logo.svg" class="logo" width="150" height="50" alt="Логотип Coach"> -->
                 <h1 class="logo">Coach</h1>
             </a>
-            <select class="select_city">
-                <option value="1">Екатеринбург</option>
-                <option value="2">Челябинск</option>
-            </select>
+            <div class="select-wrapper">
+                <select name="select-category" class="select" id="">
+                    <option value="1">Екатеринбург</option>
+                    <option value="2">Челябинск</option>
+                    <option value="3">Тюмень</option>
+                </select>
+            </div>
             <a href="#" class="sign-in_link">Войти</a>
         </nav>
     </header>
@@ -32,25 +37,25 @@
             <h2 class="categories-title">Категории</h2>
             <ul class="categories-list">
                 <li class="categories-list-item">
-                    <a href="categories-list-item-link">
+                    <a href="#" class="categories-list-item-link">
                         <img src="/coach/image/slider/сategory-photo_1.jpg" width="270" height="170" alt="Образование">
                         <p class="categories-list-item-title">Образование</p>
                     </a>
                 </li>
                 <li class="categories-list-item">
-                    <a href="categories-list-item-link">
+                    <a href="#" class="categories-list-item-link">
                         <img src="/coach/image/slider/сategory-photo_1.jpg" width="270" height="170" alt="Образование">
                         <p class="categories-list-item-title">Спорт</p>
                     </a>
                 </li>
                 <li class="categories-list-item">
-                    <a href="categories-list-item-link">
+                    <a href="#" class="categories-list-item-link">
                         <img src="/coach/image/slider/сategory-photo_1.jpg" width="270" height="170" alt="Образование">
                         <p class="categories-list-item-title">Киберспорт</p>
                     </a>
                 </li>
                 <li class="categories-list-item">
-                    <a href="categories-list-item-link">
+                    <a href="#" class="categories-list-item-link">
                         <img src="/coach/image/slider/сategory-photo_1.jpg" width="270" height="170" alt="Образование">
                         <p class="categories-list-item-title">Творчество</p>
                     </a>
